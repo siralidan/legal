@@ -13,7 +13,7 @@
             or
             <a
                 href="{{ route('login') }}"
-                class="text-purple-600 hover:text-purple-500"
+                class="text-gray-600 hover:text-gray-500"
             >
                 login with existing account
             </a>
@@ -24,7 +24,7 @@
                      autofocus placeholder="Enter your Email Address"/>
         </div>
         <button
-            class="btn-primary bg-emerald-500 hover:bg-emerald-600 active:bg-emerald-700 w-full"
+            class="btn-primary bg-orange-800 hover:bg-gray-600 active:bg-gray-700 w-full"
         >
             Email Password Reset Link
         </button>
