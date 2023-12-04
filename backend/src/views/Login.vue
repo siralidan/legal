@@ -1,5 +1,5 @@
 <template>
-  <GuestLayout title="Sign in to your account">
+  <GuestLayout title="Sign in to admin account">
     <form class="mt-8 space-y-6" method="POST" @submit.prevent="login">
       <div v-if="errorMsg" class="flex items-center justify-between py-3 px-5 bg-red-500 text-white rounded">
         {{ errorMsg }}
@@ -48,7 +48,7 @@
         </div>
 
         <div class="text-sm">
-          <router-link :to="{name: 'requestPassword'}" class="font-medium text-indigo-600 hover:text-indigo-500"> Forgot
+          <router-link :to="{name: 'requestPassword'}" class="font-medium text-gray-800 hover:text-orange-800"> Forgot
             your password?
           </router-link>
         </div>
@@ -57,7 +57,7 @@
       <div>
         <button type="submit"
                 :disabled="loading"
-                class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-orange-800 hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 :class="{
                   'cursor-not-allowed': loading,
                   'hover:bg-indigo-500': loading,
@@ -84,7 +84,7 @@
             ></path>
           </svg>
           <span class="absolute left-0 inset-y-0 flex items-center pl-3">
-              <LockClosedIcon class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" aria-hidden="true"/>
+              <LockClosedIcon class="h-5 w-5 text-white group-hover:text-white" aria-hidden="true"/>
             </span>
           Sign in
         </button>
