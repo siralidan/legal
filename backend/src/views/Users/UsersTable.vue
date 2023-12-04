@@ -93,14 +93,14 @@
                   <MenuItem v-slot="{ active }">
                     <button
                       :class="[
-                        active ? 'bg-indigo-600 text-white' : 'text-gray-900',
+                        active ? 'bg-gray-600 text-white' : 'text-gray-900',
                         'group flex w-full items-center rounded-md px-2 py-2 text-sm',
                       ]"
                       @click="editUser(user)"
                     >
                       <PencilIcon
                         :active="active"
-                        class="mr-2 h-5 w-5 text-indigo-400"
+                        class="mr-2 h-5 w-5 text-gray-400"
                         aria-hidden="true"
                       />
                       Edit
@@ -109,14 +109,14 @@
                   <MenuItem v-slot="{ active }">
                     <button
                       :class="[
-                        active ? 'bg-indigo-600 text-white' : 'text-gray-900',
+                        active ? 'bg-gray-600 text-white' : 'text-gray-900',
                         'group flex w-full items-center rounded-md px-2 py-2 text-sm',
                       ]"
                       @click="deleteUser(user)"
                     >
                       <TrashIcon
                         :active="active"
-                        class="mr-2 h-5 w-5 text-indigo-400"
+                        class="mr-2 h-5 w-5 text-gray-400"
                         aria-hidden="true"
                       />
                       Delete
@@ -151,7 +151,7 @@
           class="relative inline-flex items-center px-4 py-2 border text-sm font-medium whitespace-nowrap"
           :class="[
               link.active
-                ? 'z-10 bg-indigo-50 border-indigo-500 text-indigo-600'
+                ? 'z-10 bg-gray-50 border-gray-500 text-gray-600'
                 : 'bg-white border-gray-300 text-gray-500 hover:bg-gray-50',
               i === 0 ? 'rounded-l-md' : '',
               i === users.links.length - 1 ? 'rounded-r-md' : '',

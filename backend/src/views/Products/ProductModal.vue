@@ -47,13 +47,13 @@
                   <CustomInput class="mb-2" v-model="product.title" label="Product Title"/>
                   <CustomInput type="file" class="mb-2" label="Product Image" @change="file => product.image = file"/>
                   <CustomInput type="textarea" class="mb-2" v-model="product.description" label="Description"/>
-                  <CustomInput type="number" class="mb-2" v-model="product.price" label="Price" prepend="$"/>
+                  <CustomInput type="number" class="mb-2" v-model="product.price" label="Price" prepend="Ksh"/>
                   <CustomInput type="checkbox" class="mb-2" v-model="product.published" label="Published"/>
                 </div>
                 <footer class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
                   <button type="submit"
                           class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm
-                          text-white bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500">
+                          text-white bg-gray-600 hover:bg-gray-400 focus:ring-indigo-500">
                     Submit
                   </button>
                   <button type="button"
